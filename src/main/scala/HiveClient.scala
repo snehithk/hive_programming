@@ -11,7 +11,8 @@ object HiveClient extends App {
 
   val res: ResultSet = stmt.executeQuery("SELECT * FROM fall2019_snehith.logs_internal")
   while (res.next()) {
-    println("userid: " + res.getString(3))
+    println("" +
+      "userid: " + res.getString(3))
   }
   stmt.close()
   connection.close()
